@@ -1,0 +1,20 @@
+<h1 class="mb-5 text-primary">Listado clientes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Cliente</th>
+            <th scope="col">CIF</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Grupo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of datos">
+            <td>{{user.name}}</td>
+            <td>{{user.cif}}</td>
+            <td>{{user.direccion}}</td>
+            <td>{{user.grupo}}</td>
+        </tr>
+    </tbody>
+</table>
